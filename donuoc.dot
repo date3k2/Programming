@@ -1,0 +1,10 @@
+digraph do_nuoc {
+"words" -> "dross" 
+"orcas" -> "chars"
+dross -> soars 
+prats -> astro 
+astro -> trows 
+trows -> words 
+soars -> {orcas ,astro }
+chars -> hcars -> orcas -> hcars
+}

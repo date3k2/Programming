@@ -1,0 +1,67 @@
+* {
+    padding: 0.5;
+    border: none;
+}
+#div1, #div2, #div3
+{
+    height:200px;
+    width: 200px;
+    padding:10px;
+    border: 1px solid rgb(190, 107, 107);
+    margin: 10px;
+    float: left;
+    background-color: rgba(141, 197, 201, 0.603);
+}
+body { background-image: url("https://www.freepik.com/free-photos-vectors/background");}
+p {text-align: center;
+font-family: Calibri;
+font-size:30px;
+color:rgb(248, 0, 83);
+margin:10px;
+padding: 20px;
+background-color:rgb(139, 159, 202);
+border:2px solid green;}
+ th, td{
+     border: 2px solid rgb(230, 44, 68);
+     
+     border-radius: 7px;
+ }
+ td {
+     font-family: calibri;
+     text-align: center;
+     width: 1%;
+     font-size:20px;
+ }
+ th {
+     font-size:23px;}
+     hr {
+        clear:both;
+    }
+    br {
+        clear:both;
+    }
+#name1 {
+padding: 5px;
+border-radius: 5px;
+border: 2.5px solid rgba(158, 50, 77, 0.514);
+outline: none;
+}
+#birth {
+    border: 2px solid black;
+}
+.vcl { background-color: aqua;
+width:200px;
+align-items: center;
+}
+.l2, .l25, .l5 {
+    border: 2px solid black;
+    margin:1px;
+} 
+.ip {
+    display:flex;
+    margin-top:10px;
+    width:150px;
+    border: 2px solid rgb(110, 29, 29);
+    justify-content:center;
+    cursor: pointer;
+}

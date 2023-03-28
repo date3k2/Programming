@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button1</title>
+<style>
+    .button1 {
+        background-color: #019160;
+        border:none;
+        height: 46px;
+        padding: 3px 24px 3px 24px;
+        font-size: 15px;
+        border-radius: 4px;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .button1:hover {
+        background-color: #2fbe8e;
+    }
+    .button1:active 
+    { background-color: #01B075;}
+    .button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.button1 span:after {
+  position: absolute;
+  opacity: 0;
+}
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+    <button class="button1"><span> Nộp hồ sơ</span></button>
+</body>
+</html>

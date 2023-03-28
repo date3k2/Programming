@@ -1,0 +1,18 @@
+body {
+background-color: rgba(99, 222, 226, 0.781);
+}
+div { 
+    border: 2px solid rgba(224, 34, 20, 0.712);
+    justify-content: center;
+    display: flex;
+    margin:10px 0 0 0;
+    
+}
+/* .item1 {
+    width: 200px;
+    height:100px;
+    color:blue;
+    text-align: center;
+    display: flex;
+    border: 2px solid rgba(103, 62, 150, 0.712);
+} */
