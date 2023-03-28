@@ -77,5 +77,6 @@
         "stdbool.h": "c",
         "math.h": "c",
         "stdlib.h": "c"
-    }
+    },
+    "python.analysis.typeCheckingMode": "off"
 }
