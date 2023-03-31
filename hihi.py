@@ -1,3 +1,11 @@
-x= "date3k2"
-x=x.encode()
-print(x)
+from turtle import *
+color('red', 'yellow')
+begin_fill()
+while True:
+    forward(200)
+    left(170)
+    if abs(pos()) < 1:
+        break
+end_fill()
+done()
+n="123"
