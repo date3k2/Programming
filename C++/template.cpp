@@ -16,7 +16,18 @@ int main()
     //     // cin >> n;
     //     cout << t;
     // }
-    bitset<8> k;
-    cout<<k;
+    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+    // check if a character is a vowel
+    char ch = 'I';
+    auto x = find(begin(vowels), end(vowels), tolower(ch))-begin(vowels);
+    string s = "gafas";
+    reverse(s.begin(), s.end());
+    cout << s;
+    for (auto &&i : s)
+    {
+        cout<<i<<" ";
+    }
+    
+
     return 0;
 }
