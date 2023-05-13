@@ -5,16 +5,15 @@ using namespace std;
 int main()
 {
     int t;
-    freopen("test.inp", "r", stdin);
-    freopen("test.out", "w", stdout);
+    // freopen("test.inp", "r", stdin);
+    // freopen("test.out", "w", stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cin >> t;
     while (t--)
     {
-        // int n;
-        // cin >> n;
-        cout << t;
+        // int x,y;
+        // cin >> x>>y;
     }
     return 0;
 }
