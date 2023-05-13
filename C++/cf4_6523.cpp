@@ -26,7 +26,7 @@ int main()
             {
                 if (kt)
                     break;
-                fo(j, 0, trunc(m)) if (abs(pow(3, -i) * pow(1.5, -j) - (double)y / x) < 1e-6)
+                fo(j, 0, trunc(m)) if (abs(pow(3, -i) * pow(1.5, -j) * x - y) < 1e-6)
                 {
                     cout << "YES\n";
                     kt = true;
