@@ -9,11 +9,15 @@ int main()
     // freopen("test.out", "w", stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    cin >> t;
-    while (t--)
-    {
-        // int x,y;
-        // cin >> x>>y;
-    }
+    // cin >> t;
+    // while (t--)
+    // {
+    //     // int x,y;
+    //     // cin >> x>>y;
+    // }
+    int x = 2147483647;
+    int y = 1424;
+    ll mid = (int)((static_cast<ll>(x + y)) / 2);
+    cout << (ll)(x) + (ll)y;
     return 0;
 }
