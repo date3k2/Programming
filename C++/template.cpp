@@ -19,5 +19,6 @@ int main()
     int y = 1424;
     ll mid = (int)((static_cast<ll>(x + y)) / 2);
     cout << (ll)(x) + (ll)y;
+    auto  s =1.0;
     return 0;
 }
