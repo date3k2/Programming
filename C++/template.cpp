@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define fo(i, l, h) for (int i = l; i <= h; ++i)
+#define loop(i, l, h) for (int i = l; i <= h; ++i)
 #define ll long long
 using namespace std;
 int main()
