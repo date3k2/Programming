@@ -34,7 +34,7 @@ class Graph:
     def addEdge(self, u, v):
         self.graph[u].append(v)
 
-    def DFS(self, v):
+    def dfs(self, v):
         self.visited.add(v)
         for u in self.graph[v]:
             if u not in self.visited:
