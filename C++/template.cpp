@@ -2,6 +2,8 @@
 #define loop(i, l, h) for (int i = l; i <= h; ++i)
 #define ll long long
 using namespace std;
+#pragma GCC optimize("Ofast", "inline", "-ffast-math")
+#pragma GCC target("avx,sse2,sse3,sse4,mmx")
 int main()
 {
     int t;

@@ -1,0 +1,70 @@
+digraph {
+	node [shape=circle]
+	root
+	roota
+	root -> roota
+	rootap
+	roota -> rootap
+	rootapp
+	rootap -> rootapp
+	rootappe
+	rootapp -> rootappe
+	rootappen
+	rootappe -> rootappen
+	rootappend
+	rootappen -> rootappend
+	rootappl
+	rootapp -> rootappl
+	rootapple
+	rootappl -> rootapple
+	rootb
+	root -> rootb
+	rootbl
+	rootb -> rootbl
+	rootbli
+	rootbl -> rootbli
+	rootblin
+	rootbli -> rootblin
+	rootblink
+	rootblin -> rootblink
+	rootblu
+	rootbl -> rootblu
+	rootblum
+	rootblu -> rootblum
+	rootblumb
+	rootblum -> rootblumb
+	rootblumbe
+	rootblumb -> rootblumbe
+	rootblumber
+	rootblumbe -> rootblumber
+	rootblumberg
+	rootblumber -> rootblumberg
+	rootu
+	root -> rootu
+	rootun
+	rootu -> rootun
+	rootuni
+	rootun -> rootuni
+	rootunit
+	rootuni -> rootunit
+	rootunite
+	rootunit -> rootunite
+	rootunited
+	rootunite -> rootunited
+	rootuniv
+	rootuni -> rootuniv
+	rootunive
+	rootuniv -> rootunive
+	rootuniver
+	rootunive -> rootuniver
+	rootunivers
+	rootuniver -> rootunivers
+	rootuniverse
+	rootunivers -> rootuniverse
+	rootuniversi
+	rootunivers -> rootuniversi
+	rootuniversit
+	rootuniversi -> rootuniversit
+	rootuniversity
+	rootuniversit -> rootuniversity
+}
