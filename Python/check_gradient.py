@@ -2,7 +2,6 @@ import numpy as np
 
 
 def check_grad(fn, gr, X):
-
     X_flat = X.reshape(-1)  # convert X to an 1d array, 1 for loop needed
     shape_X = X.shape  # original shape of X
     num_grad = np.zeros_like(X)  # numerical grad, shape = shape of X
@@ -17,10 +16,10 @@ def check_grad(fn, gr, X):
         Xn_flat[i] -= eps
         Xp = Xp_flat.reshape(shape_X)
         Xn = Xn_flat.reshape(shape_X)
-        grad_flat[i] = (fn(Xp) - fn(Xn))/(2*eps)
+        grad_flat[i] = (fn(Xp) - fn(Xn)) / (2 * eps)
     num_grad = grad_flat.reshape(shape_X)
     diff = np.linalg.norm(num_grad - gr(X))
-    print('Difference between two methods should be small:', diff)
+    print("Difference between two methods should be small:", diff)
 
 
 # ==== check if grad(trace(A*X)) == A^T ====
