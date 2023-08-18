@@ -33,26 +33,26 @@ int main()
         {
             int l, r;
             cin >> l >> r;
-            int x = 0;
-            unordered_map<int, int> m;
-            m[0] = 1;
+            int x = 0, maxs = 0, mins = 0;
             for (int i = 0; i < l - 1; ++i)
             {
                 if (op[i] == '-')
                     --x;
                 else
-                    x++;
-                m[x] = 1;
+                    ++x;
+                maxs = max(maxs, x);
+                mins = min(mins, x);
             }
             for (int i = r; i < op.size(); ++i)
             {
                 if (op[i] == '-')
                     --x;
                 else
-                    x++;
-                m[x] = 1;
+                    ++x;
+                maxs = max(maxs, x);
+                mins = min(mins, x);
             }
-            cout << m.size() << "\n";
+            cout << maxs - mins + 1 << "\n";
         }
     }
     return 0;
