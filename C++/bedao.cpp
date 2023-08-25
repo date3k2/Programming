@@ -7,7 +7,7 @@ int main()
     cin.tie(NULL);
     long long ans = 0, max_product = 0, n, k;
     cin >> n >> k;
-    int a[n], b[n];
+    long long a[n], b[n];
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
