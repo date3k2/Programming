@@ -76,7 +76,9 @@
         "stdio.h": "c",
         "stdbool.h": "c",
         "math.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "variant": "cpp",
+        "*.txt": "c"
     },
     "python.analysis.typeCheckingMode": "off"
 }
