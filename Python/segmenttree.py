@@ -1,5 +1,6 @@
 import sys
 from typing import List
+
 sys.stdin = open(r"C:\Users\nguye\Documents\Code\Programming\C++\test.inp", "r")
 sys.stdout = open(r"C:\Users\nguye\Documents\Code\Programming\C++\test.out", "w")
 input = sys.stdin.readline
