@@ -78,7 +78,7 @@
         "math.h": "c",
         "stdlib.h": "c",
         "variant": "cpp",
-        "*.txt": "c"
+        "*.txt": "ignore"
     },
     "python.analysis.typeCheckingMode": "off"
 }
