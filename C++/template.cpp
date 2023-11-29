@@ -20,5 +20,7 @@ int main()
     ll mid = (int)((static_cast<ll>(x + y)) / 2);
     cout << (ll)(x) + (ll)y;
     auto s = 1.0;
+    // number of bits 1 in a integer
+    cout << __builtin_popcount(5);
     return 0;
 }
