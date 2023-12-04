@@ -22,5 +22,8 @@ int main()
     auto s = 1.0;
     // number of bits 1 in a integer
     cout << __builtin_popcount(5);
+    list<int> l;
+    vector<int> k;
+    // k.erase()
     return 0;
 }

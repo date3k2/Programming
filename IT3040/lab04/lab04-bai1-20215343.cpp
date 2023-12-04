@@ -73,7 +73,7 @@ int main()
 
     head = reverse(head);
 
-    cout << "Reversed list: ";
+    cout << "\nReversed list: ";
     print(head);
 
     return 0;
