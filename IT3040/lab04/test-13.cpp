@@ -2,6 +2,8 @@
 using namespace std;
 #define ll long long
 #define loop(i, a, b) for (int i = a; i != b; ++i)
+#define F first
+#define S second
 struct Castle
 {
     int a, k;
@@ -16,6 +18,7 @@ int main()
     cin >> n >> s;
     int a, k;
     priority_queue<pair<int, int>> pq;
+    priority_queue<pair<int, int>> pq2;
     loop(i, 0, n)
     {
         cin >> a >> k;
@@ -24,22 +27,35 @@ int main()
     while (!pq.empty() && s > 0)
     {
         auto t = pq.top();
+        if (!pq2.empty())
+        {
+            auto t2 = pq2.top();
+            if (t2.F >= t.F)
+            {
+                pq2.pop();
+                --s;
+                continue;
+            }
+        }
         pq.pop();
-        int x = t.second / t.first;
+        int x = t.S / t.F;
         x = min(x, s);
         s -= x;
-        t.second -= x * t.first;
-        cout << x << " " << s << endl;
+        t.S -= x * t.F;
         if (t.second > 0)
-            pq.push(t);
-        break;
+            pq2.push({t.S, t.F});
     }
-    // print
+    int ans = 0;
     while (!pq.empty())
     {
-        auto t = pq.top();
+        ans += pq.top().S;
         pq.pop();
-        cout << t.first << " " << t.second << endl;
     }
+    while (!pq2.empty())
+    {
+        ans += pq2.top().F;
+        pq2.pop();
+    }
+    cout << ans;
     return 0;
 }

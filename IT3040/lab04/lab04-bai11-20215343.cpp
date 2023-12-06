@@ -2,9 +2,14 @@
 using namespace std;
 #define ll long long
 #define loop(i, a, b) for (int i = a; i != b; ++i)
+#define F first
+#define S second
+/*
+Nguyen Duy Dat - 20215343
+*/
 struct Castle
 {
-    int a, k;
+    int a, k; // a = number of enemies , k = strength of each soldier
 };
 int n, s;
 int main()
@@ -14,28 +19,46 @@ int main()
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     cin >> n >> s;
-    Castle c[n];
-    loop(i, 0, n) cin >> c[i].a >> c[i].k;
-    sort(c, c + n, [](Castle &u, Castle &v)
-         { return u.k > v.k; });
-    // loop(i, 0, n)
-    // {
-    //     cout << c[i].a << " " << c[i].k << endl;
-    // }
-    int i = 0;
-    while (s > 0 && i < n)
-    {
-        int t = c[i].a / c[i].k;
-        t = min(t, s);
-        s -= t;
-        c[i].a -= t * c[i].k;
-        ++i;
-        cout << t << " " << s << endl;
-    }
-    cout << "------------------------------\n";
+    int a, k;
+    priority_queue<pair<int, int>> pq;
+    priority_queue<pair<int, int>> pq2;
     loop(i, 0, n)
     {
-        cout << c[i].a << " " << c[i].k << endl;
+        cin >> a >> k;
+        pq.push({k, a});
     }
+    while (!pq.empty() && s > 0)
+    {
+        auto t = pq.top();
+        if (!pq2.empty())
+        {
+            auto t2 = pq2.top();
+            if (t2.F >= t.F)
+            {
+                pq2.pop();
+                --s;
+                continue;
+            }
+        }
+        pq.pop();
+        int x = t.S / t.F;
+        x = min(x, s);
+        s -= x;
+        t.S -= x * t.F;
+        if (t.second > 0)
+            pq2.push({t.S, t.F});
+    }
+    int ans = 0;
+    while (!pq.empty())
+    {
+        ans += pq.top().S;
+        pq.pop();
+    }
+    while (!pq2.empty())
+    {
+        ans += pq2.top().F;
+        pq2.pop();
+    }
+    cout << ans;
     return 0;
 }
