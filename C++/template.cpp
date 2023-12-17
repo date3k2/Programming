@@ -22,6 +22,8 @@ int main()
     auto s = 1.0;
     // number of bits 1 in a integer
     cout << __builtin_popcount(5);
+    map<string,int> rate;
+    if (rate.)
     list<int> l;
     vector<int> k;
     // k.erase()
